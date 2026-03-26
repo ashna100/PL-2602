@@ -1,4 +1,4 @@
-<h1 align="center">🚀 DevOps Batch 2601</h1>
+<h1 align="center">🚀 AWS + DevOps Batch 2602</h1>
 
 <p align="center">
   🌟 <b>Hands-on | Project-Driven | Industry-Ready</b> 🌟
@@ -33,6 +33,7 @@ By the end, you will be confident working with CI/CD, containers, orchestration,
 | **Module 8**  | Ansible                                           | 4 days     |
 | **Module 9**  | Terraform                                         | 4 days     |
 | **Module 10** | Capstone Projects*                                | 1 day      |
+| **Module 11** | AWS                                               | 17 day     |
 
 ---
 
@@ -57,7 +58,8 @@ By the end, you will be confident working with CI/CD, containers, orchestration,
 - 🧪 SonarQube – Code Quality  
 - 🤖 Ansible – Configuration Management  
 - 🌍 Terraform – Infrastructure as Code  
-- 📊 Monitoring & Observability  
+- 📊 Monitoring & Observability
+- AWS Cloud
 
 ---
 
