@@ -8,7 +8,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Level-Beginner_to_Advanced-blue?style=for-the-badge">
   <img src="https://img.shields.io/badge/Batch-2602-success?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Focus-Hands_On-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Hands--On-Yes-orange?style=for-the-badge">
   <img src="https://img.shields.io/badge/Outcome-Job_Ready-critical?style=for-the-badge">
 </p>
 
@@ -17,16 +17,17 @@
 ## 🎯 Program Structure (3 Phases)
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Phase_1-DevOps-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Phase_2-AWS-green?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Phase_3-DevOps_on_AWS-purple?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Phase_1-DevOps_(34_Days_|_68_Hours)-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Phase_2-AWS_(15_Days_|_30_Hours)-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Phase_3-DevOps_on_AWS_(2_Days_|_4_Hours)-purple?style=for-the-badge">
 </p>
 
 ---
 
-# 🔵 Phase 1: DevOps Foundation
+# 🔵 Phase 1: DevOps Foundation  
+### ⏳ Duration: **34 Days | 68 Hours**
 
-💡 Build strong fundamentals + core DevOps tools
+💡 Build strong fundamentals + master core DevOps tools
 
 <table>
 <tr><th>🔢</th><th>📘 Module</th><th>⏳ Duration</th></tr>
@@ -45,35 +46,37 @@
 
 ---
 
-# 🟢 Phase 2: AWS Cloud
+# 🟢 Phase 2: AWS Cloud  
+### ⏳ Duration: **15 Days | 30 Hours**
 
-💡 Master cloud fundamentals + real infrastructure
+💡 Master cloud fundamentals + real-world infrastructure
 
 <table>
 <tr><th>🔢</th><th>📘 Module</th><th>⏳ Duration</th></tr>
 
-<tr><td>10</td><td>☁️ AWS Core Services (EC2, S3, IAM, VPC)</td><td>6 Days</td></tr>
-<tr><td>11</td><td>🔐 Security & Networking (IAM, Security Groups, NACL)</td><td>3 Days</td></tr>
-<tr><td>12</td><td>📦 Storage & Databases (S3, EBS, RDS)</td><td>3 Days</td></tr>
+<tr><td>10</td><td>☁️ AWS Core (EC2, S3, IAM, VPC)</td><td>6 Days</td></tr>
+<tr><td>11</td><td>🔐 Security & Networking</td><td>3 Days</td></tr>
+<tr><td>12</td><td>📦 Storage & Databases</td><td>3 Days</td></tr>
 <tr><td>13</td><td>⚖️ Load Balancing & Auto Scaling</td><td>3 Days</td></tr>
-<tr><td>14</td><td>📊 Monitoring (CloudWatch, Logs, Alerts)</td><td>2 Days</td></tr>
+<tr><td>14</td><td>📊 Monitoring (CloudWatch)</td><td>2 Days</td></tr>
 
 </table>
 
 ---
 
-# 🟣 Phase 3: DevOps on AWS (Real-World Implementation)
+# 🟣 Phase 3: DevOps on AWS  
+### ⏳ Duration: **2 Days | 4 Hours**
 
-💡 Combine DevOps + AWS to build production-ready systems
+💡 Integrate DevOps tools with AWS for real production use
 
 <table>
 <tr><th>🔢</th><th>📘 Module</th><th>⏳ Duration</th></tr>
 
 <tr><td>15</td><td>🚀 CI/CD Pipeline on AWS</td><td>2 Days</td></tr>
-<tr><td>16</td><td>🐳 Docker + ECR + ECS/EKS Deployment</td><td>3 Days</td></tr>
-<tr><td>17</td><td>🌍 Terraform with AWS Infrastructure</td><td>2 Days</td></tr>
-<tr><td>18</td><td>🤖 Ansible + EC2 Automation</td><td>2 Days</td></tr>
-<tr><td>19</td><td>🏁 Capstone Project (End-to-End DevOps on AWS)</td><td>1 Day</td></tr>
+<tr><td>16</td><td>🐳 Docker + ECR + ECS/EKS</td><td>3 Days</td></tr>
+<tr><td>17</td><td>🌍 Terraform with AWS</td><td>2 Days</td></tr>
+<tr><td>18</td><td>🤖 Ansible with EC2</td><td>2 Days</td></tr>
+<tr><td>19</td><td>🏁 Capstone Project</td><td>1 Day</td></tr>
 
 </table>
 
@@ -89,34 +92,33 @@
 
 ## 🏁 Capstone Project
 
-💥 **Build a complete production-ready system**
+💥 **End-to-End Real-World Implementation**
 
-✔️ CI/CD Pipeline (Jenkins/GitHub Actions)  
+✔️ CI/CD Pipeline  
 ✔️ Dockerized Application  
 ✔️ Kubernetes Deployment (EKS)  
 ✔️ Infrastructure via Terraform  
-✔️ Monitoring + Logging  
-✔️ GitOps using ArgoCD  
+✔️ Monitoring & Logging  
+✔️ GitOps (ArgoCD)  
 
-🎯 Outcome: **Industry-grade DevOps project**
-
----
-
-## 📈 What You Will Achieve
-
-🚀 End-to-End DevOps Expertise  
-🚀 Cloud Deployment Mastery (AWS)  
-🚀 Real Project Experience  
-🚀 Interview-Ready Skills  
-🚀 Strong Portfolio
+🎯 Build a **production-ready DevOps system**
 
 ---
 
-## 👨‍💻 Who Is This For?
+## 📈 Outcome After Completion
+
+🚀 Build & deploy applications independently  
+🚀 Master DevOps + AWS tools  
+🚀 Crack DevOps interviews confidently  
+🚀 Create real-world portfolio projects  
+
+---
+
+## 👨‍💻 Who Should Join?
 
 ✔️ Beginners in IT  
-✔️ Developers transitioning to DevOps  
-✔️ System Admins  
+✔️ Developers moving to DevOps  
+✔️ System Administrators  
 ✔️ QA Engineers  
 ✔️ Cloud Enthusiasts  
 
@@ -124,9 +126,9 @@
 
 ## 📝 Notes
 
-⚠️ Capstone Project is **DIY (Guided)**  
-⚠️ Shell Scripting → **Self-Practice (Support Provided)**  
-⚠️ 80% Practical + 20% Theory
+⚠️ Capstone Project → **DIY (Guided)**  
+⚠️ Shell Scripting → **Self-Practice**  
+⚠️ Focus → **80% Practical | 20% Theory**
 
 ---
 
@@ -149,5 +151,5 @@
 <h3 align="center">✨ Learn Smart • Build Real • Grow Fast ✨</h3>
 
 <p align="center">
-  💡 <i>Your DevOps Journey Starts Here 🚀</i>
+  💡 <i>Consistency + Projects = DevOps Success 🚀</i>
 </p>
