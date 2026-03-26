@@ -2,87 +2,103 @@
 
 ![Learning Status](https://img.shields.io/badge/Status-Active%20Learning-success?style=for-the-badge)
 
-## 🎯 Learning Path Overview
-A comprehensive 35-day DevOps training program covering essential tools and practices for modern software delivery.
+---
 
-### 📊 Skills Track
-| **Core DevOps** | **Infrastructure** | **CI/CD Pipeline** | **Monitoring** |
-|-----------------|-------------------|-------------------|----------------|
-| • Linux Fundamentals | • Docker | • Jenkins | • Prometheus |
-| • Git & GitHub | • Kubernetes | • Maven | • Grafana |
-| • Ansible | • Terraform | • SonarQube | • EFK Stack |
-| • CI/CD Concepts | • Cloud Basics | • Nexus | • Monitoring |
+## 🎯 Learning Path Overview
+
+A structured **DevOps + AWS learning journey** divided into 3 powerful phases:
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Phase_1-DevOps_(34_Days_|_68_Hours)-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Phase_2-AWS_(15_Days_|_30_Hours)-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Phase_3-DevOps_on_AWS_(2_Days_|_4_Hours)-purple?style=for-the-badge">
+</p>
 
 ---
 
-## 📅 Learning Progress
+## 📊 Skills Track
 
-### **Phase 1: DevOps Overview, Linux Fundamentals & Shell Scripting** 
+| **DevOps Core** | **Containers & IaC** | **CI/CD & Quality** | **Cloud & Monitoring** |
+|-----------------|---------------------|---------------------|------------------------|
+| • Linux | • Docker | • Jenkins | • AWS |
+| • Git & GitHub | • Kubernetes | • Maven | • CloudWatch |
+| • Ansible | • Terraform | • SonarQube | • Prometheus |
+| • DevOps Concepts | • ArgoCD | • Nexus | • Grafana |
+
+---
+
+# 🔵 Phase 1: DevOps (34 Days | 68 Hours)
+
+### ⚙️ Core DevOps + Tools Mastery
+
 | Date | Module | Topics Covered | Status |
 |------|--------|----------------|--------|
-| **30 Dec 2025** | DevOps Fundamentals | SDLC phases, Waterfall vs Agile, CI/CD concepts, DevOps lifecycle | ✅ Completed |
-| **31 Dec 2025** | Linux – Part 1 | Linux Introduction & Architecture, VM setup, basic commands (`date`, `cal`, `pwd`, `whoami`) | ✅ Completed |
-| **05 Jan 2026** | Linux – Part 1 | Linux Introduction & Architecture, VM setup, basic commands (`date`, `cal`, `pwd`, `whoami`) | ✅ Completed |
-| **06 Jan 2026** | Linux – Part 2 | File operations, directory management, `more`/`less`, line numbering | ✅ Completed |
-| **08 Jan 2026** | Linux – Part 3 | `sort`, `cp`, `mv`, `grep`, `vi` editor, file utilities | ✅ Completed |
-| **09 Jan 2026** | Linux – Part 4 | `sed`, `script`, file permissions, user permissions `chown`, `chmod`, `systemctl` networking commands, systemctl, file transfer, hostname | ✅ Completed |
+| **30 Dec 2025** | 🚀 DevOps Fundamentals | SDLC, Agile vs Waterfall, CI/CD, DevOps lifecycle | ✅ Completed |
+| **31 Dec 2025 – 09 Jan 2026** | 🐧 Linux | Architecture, commands, file ops, permissions, networking, `sed`, `grep`, `vi`, systemctl | ✅ Completed |
+| **12 Jan 2026 – 16 Jan 2026** | 🌿 Git & GitHub | VCS, workflows, branching, merging, PRs, rebase, stash, reset | ✅ Completed |
+| **19 Jan 2026 – 20 Jan 2026** | 🏗️ Maven + Tomcat | Build lifecycle, repositories, deployment setup | ✅ Completed |
+| **20 Jan 2026 – 26 Jan 2026** | ⚙️ Jenkins | CI/CD pipelines, freestyle & pipeline jobs, RBAC, integrations, artifacts | ✅ Completed |
+| **27 Jan 2026 – 03 Feb 2026** | 🐳 Docker | Dockerfile, volumes, networks, compose, multi-stage builds | ✅ Completed |
+| **03 Feb 2026 – 16 Feb 2026** | ☸️ Kubernetes + ArgoCD + Monitoring | Pods, services, deployments, EKS, Helm, RBAC, ArgoCD, Prometheus, Grafana | ✅ Completed |
+| **16 Feb 2026 – 19 Feb 2026** | 🤖 Ansible | Adhoc, playbooks, roles, automation | ✅ Completed |
+| **19 Feb 2026 – 25 Feb 2026** | 🌍 Terraform | IaC, EC2 provisioning, state, modules, real scenarios | ✅ Completed |
 
-### **Phase 2: Git & GitHub** 
-| Date | Module | Topics Covered | Status |
-|------|--------|----------------|--------|
-| **12 Jan 2026** | Git and GitHub_Part 1 | Introduction to VCS, Types, Installation of Git on Local and VM, Configuration, Git Workflow & Stages, `git commands`, `git log`, `git show`, git blame`, git diff`, Changing Commit Message | ✅ Completed |
-| **13 Jan 2026** | Git and GitHub_Part 2 | `git rebase`, `git checkout`, `git restore`, git stash`, `git reset`, `git revert` | ✅ Completed |
-| **15 Jan 2026** | Git and GitHub_Part 3 | `git restore`, `git branch`, `git clone`, git pull`, `git push`, `visibility of repo` | ✅ Completed |
-| **16 Jan 2026** | Git and GitHub_Part 4 |  Branches, .gitignore, Rename a branch, Delete a branch, Pull Requests, Branch Merging, Merge Conflicts, Collaborators, Branch Protection Rules, Git Cherry-Pick, Git Fetch, Understanding Readme.md file | ✅ Completed |
+---
 
-### **Phase 3: Maven and Tomcat (Manual Deployment)** 
-| Date | Module | Topics Covered | Status |
-|------|--------|----------------|--------|
-| **19 Jan 2026** | Maven & Tomcat | Introdution, Maven Features, Goals/Lifecycle, Standalone and Web Apps, Maven Repos, Tomcat Introduction, Downloading Tomcat, Understanding Tomcat Directory Structure  | ✅ Completed |
-| **20 Jan 2026** | Maven & Tomcat | Tomcat | ✅ Completed |
+# 🟢 Phase 2: AWS (15 Days | 30 Hours)
 
-### **Phase 4: Jenkins (Automation of Deployments)** 
-| Date | Module | Topics Covered | Status |
-|------|--------|----------------|--------|
-| **20 Jan 2026** | Jenkins | Introduction to CI&CD, Jenkins, Jobs and Types, Understanding Freestyle Projects - Job Creation, Configuration, Integration of Public GitHub repo, Upstream & Downstream, Throttle Builds  | ✅ Completed |
-| **22 Jan 2026** | Jenkins | Build Triggers, Parameterized Jobs, Freestyle Project 1 (CI &C CD), Changing Tomcat Port Number, Discard old builds, Integrating Private Repo, Storing Artifacts in S3 Bucket | ✅ Completed |
-| **23 Jan 2026** | Jenkins | Pipeline, Scenarios in Pipelines, Downloading Artifacts to local, to S3, Login to jenkins without password, Jenkins Recover Deleted Job, Master and Slave Architecture | ✅ Completed |
-| **26 Jan 2026** | Jenkins | RBAC, Build Executor Status, Email Notification, Changing the Jenkins Port Number, Logging to Jenkins without Username and Password, Parallel builds, Final Project, Picking the Specific Artifact from Nexus (Practice the Jenkinsfile given), How to recover Jenkins password? - DIY TASK | ✅ Completed |
+### ☁️ Cloud Fundamentals + Infrastructure
 
-### **Phase 5: Docker (Working with Containers)** 
-| Date | Module | Topics Covered | Status |
-|------|--------|----------------|--------|
-| **27 Jan 2026** | Docker | Introduction, Understanding Containerization, Docker Workflow, Understanding Basic Docker Commands, Dockerfile - FROM, RUN, CMD | ✅ Completed |
-| **29 Jan 2026** | Docker | Dockerfile (Continuation), App Deployment, Docker Volumes | ✅ Completed |
-| **30 Jan 2026** | Docker | Docker Compose, App Deployment, Working with Dockerhub, Load Balancing with Docker | ✅ Completed |
-| **02 Feb 2026** | Docker | Multi Stage Dockerfile, Deploying various apps, Docker Networks, Docker Portrainer | ✅ Completed |
-| **03 Feb 2026** | Docker | .dockerignore, Final Project, Limitations of Dockerswarm, Kubernetes Introduction | ✅ Completed |
+| Module | Topics Covered | Status |
+|--------|----------------|--------|
+| ☁️ AWS Core | EC2, S3, IAM, VPC fundamentals | ⏳ In Progress |
+| 🔐 Security & Networking | IAM roles, policies, security groups, NACL | ⏳ Pending |
+| 📦 Storage & Databases | S3, EBS, RDS concepts | ⏳ Pending |
+| ⚖️ Load Balancing & Auto Scaling | ALB, ASG, scaling strategies | ⏳ Pending |
+| 📊 Monitoring | CloudWatch, logs, alerts | ⏳ Pending |
 
-### **Phase 6: Kubernetes (Managing the Containers)** 
-| Date | Module | Topics Covered | Status |
-|------|--------|----------------|--------|
-| **03 Feb 2026** | Kubernetes | Orchestration, Orchestration Platforms, K8s Intro, Cluster and its Components, K8s Architecture, Types of Clusters, Workloads, Methods of Creation of Resources, Structure of YAML File  | ✅ Completed |
-| **05 Feb 2026** | Kubernetes | Creation of EKS Cluster, Basic Commands, Pods - Types | ✅ Completed |
-| **06 Feb 2026** | Kubernetes | Pods - Types, Services - Types, Namespaces | ✅ Completed |
-| **09 Feb 2026** | Kubernetes | Kubernetes Controllers, Deployments | ✅ Completed |
-| **10 Feb 2026** | Kubernetes | Storage in Kubernetes - PV, PVC, Resource Quota, HPA | ✅ Completed |
-| **12 Feb 2026** | Kubernetes | StatefulSet, ConfigMap, Secrets, Pod Scheduling Strategies: Node Selector | ✅ Completed |
-| **13 Feb 2026** | Kubernetes | Pod Scheduling Strategies: Node Affinity, Pod Affinity & Anti-Affinity, Ingress Controller, ArgoCD | ✅ Completed |
-| **16 Feb 2026** | Kubernetes | Grafana, Prometheus, RBAC, HELM, Cluster Autoscaler | ✅ Completed |
+---
 
-### **Phase 7: Ansible (Configuration Management)** 
-| Date | Module | Topics Covered | Status |
-|------|--------|----------------|--------|
-| **16 Feb 2026** | Ansible | Ansible Introduction | ✅ Completed |
-| **17 Feb 2026** | Ansible | Setting up Ansible Master & Workers, Working with Ansible: Adhoc Commands, Modules, Playbooks | ✅ Completed |
-| **18 Feb 2026** | Ansible | Ansible Concepts | ✅ Completed |
-| **19 Feb 2026** | Ansible | Ansible Roles | ✅ Completed |
+# 🟣 Phase 3: DevOps on AWS (2 Days | 4 Hours)
 
-### **Phase 8: Terraform (Infrastructure Automation)** 
-| Date | Module | Topics Covered | Status |
-|------|--------|----------------|--------|
-| **19 Feb 2026** | Terraform | Introduction, IaaC Tools, Terraform as IaaC Tool, Basics of Terraform, Commands, Creation Basic EC2 Resource, Statefile, Lockfile | ✅ Completed |
-| **20 Feb 2026** | Terraform | Scenarious of Creating Various Resources | ✅ Completed |
-| **23 Feb 2026** | Terraform | Terraform_Part 3 | ✅ Completed |
-| **24 Feb 2026** | Terraform | Terraform_Part 4 | ✅ Completed |
-| **25 Feb 2026** | Terraform | Terraform_Part 5 | ✅ Completed |
+### 🚀 AWS Native CI/CD
+
+| Module | Topics Covered | Status |
+|--------|----------------|--------|
+| 🚀 AWS CodeBuild | Build automation on AWS | ⏳ Pending |
+| 📦 AWS CodeDeploy | Deployment automation | ⏳ Pending |
+| 🔁 AWS CodePipeline | End-to-end CI/CD pipelines | ⏳ Pending |
+
+---
+
+## 🏁 Capstone Goal
+
+💥 Build a **production-ready DevOps system**
+
+✔️ CI/CD Pipeline  
+✔️ Dockerized Application  
+✔️ Kubernetes Deployment  
+✔️ Infrastructure via Terraform  
+✔️ Monitoring & Logging  
+✔️ AWS Integration  
+
+---
+
+## 📈 Learning Outcome
+
+🚀 End-to-End DevOps Expertise  
+🚀 Strong AWS Cloud Knowledge  
+🚀 Real-world Project Experience  
+🚀 Job-ready Skills  
+
+---
+
+## 📝 Notes
+
+⚠️ Focus → **80% Practical | 20% Theory**  
+⚠️ Capstone → **DIY (Guided)**  
+⚠️ Shell Scripting → **Self-Practice**
+
+---
+
+<h3 align="center">✨ Keep Learning • Keep Building • Keep Automating ✨</h3>
