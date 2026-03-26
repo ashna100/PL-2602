@@ -1,0 +1,118 @@
+Phase 1: DevOps
+Phase 2: AWS Cloud
+Phase 3: DevOps on AWS
+
+3+ years
+
+-----------------------------------------------------------------------------------
+Phase 1: DevOps (34-35 days | 68-70 hrs)
+-----------------------------------------------------------------------------------
+1. Linux
+2. Shell Scripting*
+3. Git & GitHub 
+4. Maven
+5. Webservers - Tomcat, Nginx, Apache/httpd
+6. Jenkins
+7. Docker
+8. Kubernetes
+9. Terraform
+10. Ansible
+11. Monitoring Tools - Prometheus & Grafana
+12. ArgoCD
+13. Nexus
+14. SonarQube
+15. Trivy
+
+*Self-paced
+
+5+ Live Projects 
+10+ Projects
+
+*Some services in AWS will be covered
+
+-----------------------------------------------------------------------------------
+Phase 2: AWS Cloud (15-17 days | 30-34 hrs)
+-----------------------------------------------------------------------------------
+Introduction to Cloud Computing
+Different Types of Clouds
+AWS Services;
+	- EC2
+	- S3
+	- IAM
+	- VPC
+	- RDS
+	- Route 53
+	- Load Balancing
+	- Secrets Manager
+	- ....
+
+2+ Live Projects
+2 Projects
+
+
+-----------------------------------------------------------------------------------
+Phase 3: DevOps on AWS Cloud (2 days | 4 hrs)
+-----------------------------------------------------------------------------------
+AWS Code Suite Services
+
+1 Live Project
+
+2 hrs of class = 4 hrs of practice
+
+Prepare your own notes
+
+70% - Practical
+30% - Theory
+
+-----------------------------------------------------------------------------------
+Creation of AWS Account
+-----------------------------------------------------------------------------------
+Pre-requisites;
+1. Valid Email
+2. Valid PAN
+3. Valid Credit/Debit Card (with international transaction enabled)
+
+Optional;
+Present Address
+Permanent Address
+
+Once your account is successfully created, AWS will deduct 2Rs
+Once your account is verified by AWS, 2Rs will sent back
+
+Free Tier Account - 6 Months - 200 Dollars Credit
+
+Upgrade your account - Pay as you use
+Bill will get generated every month 1st week
+
+Extra 1000-1500 Rs
+
+-----------------------------------------------------------------------------------
+AWS Certifications
+-----------------------------------------------------------------------------------
+https://aws.amazon.com/certification/
+
+AWS Certified Cloud Practitioner
+AWS Certified Solutions Architect - Associate
+AWS Certified Solutions Architect - Professional
+AWS Certified DevOps Engineer - Professional
+
+
+-----------------------------------------------------------------------------------
+AWS Console Overview
+-----------------------------------------------------------------------------------
+
+
+-----------------------------------------------------------------------------------
+Tomorrows Session;
+-----------------------------------------------------------------------------------
+What is Cloud Computing
+AWS Global Architecture
+DevOps Overview
+
+Notes:
+https://github.com/KastroVKiran/PL-2602.git
+
+
+
+
+
