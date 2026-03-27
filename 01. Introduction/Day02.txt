@@ -1,0 +1,77 @@
+Day 02 | 27-03-2025 | Introduction to Cloud
+=====================================================
+1) What is Cloud Computing? - Background
+2) Client-Server Architecture
+3) Regions in AWS
+
+1) Before Cloud Era
+On-premises;
+	Flat		- Cook, Clean, Maintain....
+	Hotel	- Cook, Clean, Maintain - You dont do all these
+
+Developers will write the code
+	Deploy the code - Infrastructure - Servers, Storage, Databases....
+If you are deploying the code in the physical infrastructure, maintained by the organization, that is termed as On-premise deployment
+Company - 10 Servers - 100 Rs/Server/Month - 1000 Rs/Month + 1000 Rs/Month + 1000 Rs/Month = 3000 Rs/Month
+			- +10 Servers  = 3000 Rs/Month (March)
+
+April - Traffic for your app has reduced - 5 Servers
+
+Maintenance of infra is not cost-effective
+
+2) Cloud Era
+Peak Season - You take as many servers as you want	 - pay as you use
+Non-peak Season - You take as many servers as you want - pay as you use
+
+Virtual Machines (VMs) = Server
+
+Anything that is distributed virtually to meet the needs of the client is done by using Cloud
+Cloud is distribution of services via internet
+Cloud Computing
+
+Cloud Service Providers;
+1. AWS - Amazon Web Services***
+2. MS Azure**
+3. GCP - Google Cloud Platform
+
+
+2) Client-Server Architecture
+
+
+3) Popularly Used Tools by A DevOps Engineer
+Linux
+Shell Scripting / Python Scripting
+Git and GitHub 
+Maven
+Jenkins
+Nexus
+SonarQube
+Docker
+Trivy, OWASP 
+Webservers
+Kubernetes
+Terraform
+Ansible
+Prometheus, Grafana, ELK/EFK Stack
+ArgoCD
+
+Additional tools;
+GitHub Actions
+Bit Bucket
+GitLab CI
+Monitoring Tools - Datadog, Slack, Jira, Opensearch
+
+
+3) Regions in AWS
+https://aws.amazon.com/about-aws/global-infrastructure/regions_az/
+
+
+
+
+
+
+
+
+
+
+
