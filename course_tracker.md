@@ -33,7 +33,7 @@ A structured **DevOps + AWS learning journey** divided into 3 powerful phases:
 
 | Date | Module | Topics Covered | Status |
 |------|--------|----------------|--------|
-| **26 Mar 2026** | 🚀 DevOps Fundamentals | Introduction to Cloud & DevOps, SDLC, Agile vs Waterfall, CI/CD, DevOps lifecycle | ✅ Completed |
-| **27 Mar 2026** | 🚀 DevOps Fundamentals | Cloud Computing, Client-Server Architecture, Popular DevOps Tools | ✅ Completed |
-| **30 Mar 2026** | 🚀 Linux Fundamentals | Launching and Connecting to VM, Linux Commands_Part 1 | ✅ Completed |
-| **31 Mar 2026** | 🚀 Linux Fundamentals | Linux Commands_Part 2 | ✅ Completed |
+| **26 Mar 2026** | DevOps Fundamentals | Introduction to Cloud & DevOps, SDLC, Agile vs Waterfall, CI/CD, DevOps lifecycle | ✅ Completed |
+| **27 Mar 2026** | DevOps Fundamentals | Cloud Computing, Client-Server Architecture, Popular DevOps Tools | ✅ Completed |
+| **30 Mar 2026** | Linux Fundamentals | Launching and Connecting to VM, Linux Commands_Part 1 | ✅ Completed |
+| **31 Mar 2026** | Linux Fundamentals | Linux Commands_Part 2 | ✅ Completed |
