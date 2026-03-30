@@ -1,0 +1,69 @@
+Day 03 | 30-03-2025 | Introduction to Cloud
+=====================================================
+----------------------------------------------
+Overview: Day 1 & Day 2
+----------------------------------------------
+Phase 1: DevOps		(35 days)
+Phase 2: AWS Cloud	(17 days)
+Phase 3: DevOps on Cloud (2 days)
+
+What is Cloud?
+What is Cloud Computing?
+Client Server Architecture
+List of DevOps Tools
+AWS Certifications
+
+=====================
+Module 1: Linux OS
+=====================
+=> Launching a VM in EC2 Service;
+
+Pre-requisites;
+1. Name: <optional>
+2. AMI (Amazon Machine Image): Select the required OS (Amazon Linux 2023 AMI)
+3. Instance Type: Specifications of Instance - AWS Free Tier - t3.micro (1vCPU)
+                                     (Old accounts - t2.micro)
+4. Key-pair: It is used to connect with the server/VM
+                      .pem* - MobaXTerm (Privacy Enhanced Mail)
+                      .ppk - PuTTY (PuTTY Private Key)
+5. EBS Volume - Elastic Block Storage - Storage for the VM
+                            8 GB (default storage) ----> 30 GB
+6. Number of Instances: 1
+7. Network Settings: Whenever we create an AWS Account, by default we will get a Network in every region
+	7.1. Security Group: Port Number 22 must be opened for a server - to connect with the server
+			SSH - Secure Socket Host / Secure Shell
+
+Installation Guide for MobaXTerm;
+http://mobaxterm.mobatek.net/download-home-edition.html
+
+Connecting with the Instance;
+Whenever you launch a VM, we will have Public IP Address
+Using this Public IP we will connect with the server
+
+Default username for Amazon Linux / RedHat machines is ---> ec2-user
+Default username for Ubuntu machines is ---> ubuntu
+
+cat /etc/os-release
+cal 2025
+cal jan 2026
+cal 01 2026
+cal -3
+cal -1 or cal
+date
+Note: All the servers in the cloud will follow UTC time zone
+		UTC - Universal Coordinated Time zone 
+clear (or) control + l
+pwd
+whoami
+
+
+
+
+
+
+
+
+
+
+
+
