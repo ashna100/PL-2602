@@ -1,0 +1,160 @@
+Day 04 | 31-03-2025 | Introduction to Cloud
+=====================================================
+
+=====================
+Module 1: Linux OS
+=====================
+history
+!6
+!!
+history -d 9
+history -c
+
+man pwd
+whoami --help
+
+Types of users in Linux;
+By default when we launch an EC2 instance, we will get 2 types of users;
+1. Normal user	- ec2-user (Amazon Linux), ubuntu (Ubuntu)
+2. Root user		- root
+
+Normal user has least privileges
+root user has all kinds of privileges
+ 
+Can we create custom users?
+YES
+
+sudo su
+sudo su -
+sudo -i
+
+sudo su
+$ - normal user - [ec2-user@ip-172-31-3-43 ~]
+# - root user - [root@ip-172-31-3-43 ec2-user]
+/home/ec2-user
+
+sudo su -
+/root
+
+sudo -i
+/root
+
+sudo yum install maven -y
+
+Linux Default Directory Structure;
+cd /
+pwd
+ls
+bin   dev  home  lib64  media  opt   root  sbin  sys  usr
+boot  etc  lib   local  mnt    proc  run   srv   tmp  var
+
+More info about Linux directory structure;
+https://chatgpt.com/share/69cbe379-40e8-8321-a247-1abae82c2f88
+
+which git
+which maven
+which pwd
+which cal
+
+bc
+control+c
+
+Creation of Directories and Files;
+Directory = folder
+
+mkdir kastro
+mkdir kiran kk Linux
+mkdir -v day04
+
+mkdir "learn with kastro"
+
+mv paper-live-devops PaperLiveDevOps
+
+cd day4.2
+
+cd ..
+cd ../..
+
+ls day4.3
+
+rmdir day4.4 (to delete empty directories)
+rm -rf day4.2
+rm -rf *
+
+Creation of parent and nested child directories
+mkdir -p day04/day4.1/day4.2/day4.3/day4.4
+ls day04/
+ls day04/day4.1/
+ls day04/day4.1/day4.2/
+ls day04/day4.1/day4.2/day4.3/
+ls day04/day4.1/day4.2/day4.3/day4.4/
+
+cd day04/day4.1/day4.2/day4.3/day4.4/
+
+Absolute path		- it means we should give the complete path that you want to go in (cd day04/day4.1/day4.2/day4.3/day4.4/)
+Relative path		- it means going inside each sub-directory, one step at a time
+
+cd -
+
+Creation of Files in Linux;
+Methods;
+1. touch
+2. cat
+3. vi (or) vim
+4. nano
+5. echo
+
+touch kastro.txt
+touch kiran.txt kk.txt
+
+ll (or) ls -l
+d - directory
+- - file
+
+ll -lr (or) ll -r
+
+ls -r
+
+nitin1.py
+nitin2.py
+nitin3.py
+...
+nitin11.py
+
+touch nitin{1..5}.py
+ls *.txt
+ll *.txt
+
+ls rajesh*
+ll rajesh*
+
+rm kiran.txt
+rm *.net
+rm rajesh*
+
+rm -rf *
+
+cat > kiran.txt
+
+cat kiran.txt
+tac kastro.txt
+
+cat >> kastro.txt
+
+ls -lh
+
+stat kastro.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
