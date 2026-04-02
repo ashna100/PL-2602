@@ -1,0 +1,202 @@
+Day 05 | 02-04-2025 
+=====================================================
+vol-0d423974cebed7df2
+=====================
+Module 1: Linux OS
+=====================
+1. touch
+2. cat
+3. vi (or) vim - editor mode
+press i
+write the data
+:wq
+:q!
+
+4. nano
+write the data
+control+X
+Y - save (or) N - not save
+Press Enter
+
+5. echo
+echo "this is devops phase" >  devops.txt
+
+=> inode
+index node is a data structure used by Linux to store metadata about a file/directory
+
+ls -i
+
+stat devops.txt
+
+du -h linux.txt
+
+truncate
+truncate -s 10M file2.txt
+truncate -s 1K file1.txt
+truncate -s 1G file3.txt
+
+ls -lh
+
+SELinux - Security Enhanced Linux
+
+ls -a
+ll -a
+
+hostname
+hostnamectl
+
+sudo hostnamectl set-hostname <Name>
+Task: I dont want to see the hostname, i want to see the Private IP
+
+cat /etc/hostname
+
+who
+w
+
+ALIAS
+alias m="mkdir"
+
+sudo netstat -tulnp
+
+SORT
+sort kastro.txt
+sort kastro.txt > sorted.txt
+sort -r kastro.txt
+sort -r kastro.txt > reverse-sorted.txt
+sort kastro.txt | uniq
+sort kastro.txt | uniq > uniq.txt
+
+COMPARE & DIFF
+To compare the data that is there in two files
+cmp Dockerfile Dockerfile1
+
+diff Dockerfile Dockerfile1
+diff -u Dockerfile Dockerfile1
+
+FIND
+find /home/ec2-user/ -name kastro.txt
+find /home/ec2-user/ -iname KASTRO.txt
+
+MOVE & COPY
+mv Dockerfile1 Dockerfile-swiggyapp
+mv /home/ec2-user/sorted.txt /home/ec2-user/kastro
+
+cp /home/ec2-user/Dockerfile /home/ec2-user/kastro
+
+cat -n Dockerfile
+
+cat kastro.txt > Dockerfile
+cat kastro.txt >> Dockerfile
+
+cat kastro.txt | tee -a file2.txt file1.txt
+
+ cat *.txt
+
+LESS & MORE
+
+more *.txt
+Press 'spacebar' to see the data of every next file
+
+less *.txt
+:n --- next file
+:p --- previous file
+q --- quit from the file
+
+cp file1.txt file1.txt_bkp
+cat file2.txt > file2.txt_bkp
+
+vi Dockerfile
+:%d --- to delete everything in a file
+
+>file2.txt
+
+=> File permissions in Linux
+-rw-r--r--. 1 ec2-user ec2-user 0 Apr  2 16:06 kastro.txt
+drwxr-xr-x. 2 ec2-user ec2-user 6 Apr  2 16:07 day4
+
+The file permissions are classified into 3 levels;
+user level (u)
+group level (g)
+others level (o)
+
+For each level, we will have 3 inbuild permissions;
+read (r)
+write (w)
+execute (x)
+
+rw-		r--		r--
+u		g		o
+
+chmod
+chmod g+x kastro.txt
+chmod o+wx kastro.txt
+
+chmod u-r kastro.txt
+chmod u-wx kastro.txt
+
+Permissions with numbers;
+0 - no permissions
+1 - execute
+2 - write
+3 - 2+1 - write+execute
+4 - read
+5 - 4+1 - read+execute
+6 - 4+2 - read+write
+7 - 6+1 - read+write+execute
+
+chmod 111 kiran.txt
+
+wc data.txt
+wc -l data.txt
+wc -w data.txt
+wc -c data.txt
+wc -lw data.txt
+wc -lc data.txt
+wc -wc data.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
