@@ -37,3 +37,5 @@ A structured **DevOps + AWS learning journey** divided into 3 powerful phases:
 | **27 Mar** | DevOps Fundamentals | Cloud Computing, Client-Server Architecture, Popular DevOps Tools | ✅ Completed |
 | **30 Mar** | Linux Fundamentals | Launching and Connecting to VM, Linux Commands_Part 1 | ✅ Completed |
 | **31 Mar** | Linux Fundamentals | Linux Commands_Part 2 | ✅ Completed |
+| **02 Apr** | Linux Fundamentals | Linux Commands_Part 3 | ✅ Completed |
+| **03 Apr** | Linux Fundamentals | Linux Commands_Part 4 | ✅ Completed |
