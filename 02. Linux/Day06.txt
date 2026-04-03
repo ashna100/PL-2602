@@ -1,0 +1,484 @@
+Day 06 | 03-04-2025 
+=====================================================
+=====================
+Module 1: Linux OS
+=====================
+GREP
+Global Regular Expression Print
+It is used to search for a word
+
+
+sudo yum install tree -y
+
+grep "Linux" file1.txt
+grep -i "linux" file1.txt
+
+grep -n "linux" file1.txt
+
+grep -in "linux" file1.txt
+
+grep -c "linux" file1.txt
+grep -ic "linux" file1.txt
+
+grep -i "linux" *.txt
+grep -i "linux" *
+
+grep -r "ERROR" .
+grep -ri "ERROR" .
+
+grep -w "Linux" file1.txt
+
+grep -v "Linux" file1.txt
+grep -vi "Linux" file1.txt
+
+grep "^L" file1.txt
+grep "text$" file1.txt
+
+grep -E "ERROR|WARN" logs/app.log
+grep -A1 "ERROR" logs/app.log
+grep -B1 "ERROR" logs/app.log
+grep -C1 "ERROR" logs/app.log
+
+=> SED 
+Stream Editor
+s - substitute
+d - delete
+p - print
+i - insert
+
+Note" we can do all the above activities without opening the file
+
+sed -n "3p" students.txt
+sed -n "2,4p" students.txt
+
+sed '1d' students.txt
+sed -i '1d' students.txt
+sed -i.bak '1d' students.txt
+
+sed 's/cloudcloud/AWS/' students.txt
+
+sed -i 's/cloudcloud/AWS/' students.txt
+sed -i.bkps 's/AWS/Azure/' students.txt
+
+sed '/Azure/a CloudsServiceProviers' students.tx
+
+sed '/Azure/i ---Clouds---' students.txt
+
+sed -i '$d' students.txt
+
+sed -i '$d' students.txt
+sed -i '3d' students.txt
+sed -i '2, 5d' students.txt
+
+sed '1~2d' students.txt
+
+=> HEAD & TAIL
+head numbers.txt
+tail numbers.txt
+
+head -n 5 numbers.txt
+head -5 numbers.txt
+
+tail -5 numbers.txt
+tail -n 5 numbers.txt
+
+Tasks: 
+Print the lines from line2 to line 5 from top
+Print the lines from line2 to line 5 from bottom
+
+=> Working with vi mode
+shift + a
+shift + i
+:set number
+:4 
+
+yy
+p
+dd
+u
+control+r
+
+delete the 2 lines in a file from top
+delete the 2 lines in a file from bottom
+delete from 3 to 6 lines in a file from top
+delete from 3 to 6 lines in a file from bottom
+
+/student
+
+=> CHOWN
+chown ec2-user root.txt
+chown root numbers.txt
+
+=> Creation and Working with Users
+useradd dev-user
+id dev-user
+
+cat /etc/passwd
+
+cat /etc/passwd | grep dev-user
+
+
+delete the user from a group
+
+Next Session:
+awk
+any minor commands
+Copying the data from instance to local machine & vice-versa
+
+Module 2: Git and GitHub
+
+Self-learning: SHELL SCRIPTING
+https://www.youtube.com/playlist?list=PLs-PsDpuAuTeT2iRQpNs0sl-sXFD10I1C
+https://github.com/KastroVKiran/ShellScriptingforDevOpsEngineering.git
+
+
+=========
+Lab 1
+=========
+Q) i have launched amazon linux 2023 ami, we will usually connect with vm as "ec2-user" default user. lets say i want to connect with custom user name such as "kastro-devops" using mobaxterm terminal with public ip of vm. can we connect? if so how? tell me complete step by step process
+
+Ans) Yes, we can achieve this.
+But you cannot directly SSH as a new user unless that user already exists on the VM.
+So the process is:
+	Connect using default ec2-user
+	Create your custom user
+	Configure SSH access for that user
+	Then connect via MobaXterm using the new username
+
+🚀 Complete Step-by-Step Process
+🔹 Step 1: Connect to VM using default user (ec2-user)
+
+🔹 Step 2: Create New User (kastro-devops)
+sudo adduser kastro-devops
+Verify:
+id kastro-devops
+
+🔹 Step 3: Set Password (Optional)
+Not required for key-based login, but useful:
+sudo passwd kastro-devops
+
+🔹 Step 4: Give Sudo Access (Important for DevOps)
+sudo usermod -aG wheel kastro-devops
+In Amazon Linux, wheel group = sudo access
+
+🔹 Step 5: Setup SSH Key Access (MOST IMPORTANT STEP)
+Your new user cannot login yet because no SSH key is configured.
+Copy SSH Key from ec2-user
+sudo mkdir -p /home/kastro-devops/.ssh
+sudo cp /home/ec2-user/.ssh/authorized_keys /home/kastro-devops/.ssh/
+Set Correct Permissions
+sudo chown -R kastro-devops:kastro-devops /home/kastro-devops/.ssh
+sudo chmod 700 /home/kastro-devops/.ssh
+sudo chmod 600 /home/kastro-devops/.ssh/authorized_keys
+🔹 Step 6: (Optional but Recommended) Disable Password Login
+Edit SSH config:
+sudo nano /etc/ssh/sshd_config
+Ensure:
+PasswordAuthentication no
+Restart SSH:
+sudo systemctl restart sshd
+🔹 Step 7: Connect Using Custom User i.e kastro-devops in MobaXTerm duplicate terminal
+Execute 4 to 5 commands.
+While installing packages, use "sudo" in the beginning. It will prompt user password and then check installations.
+
+Does adding an user to wheel group = root access?
+YES (indirectly)
+When you run:
+sudo usermod -aG wheel username
+It does NOT make the user root, but:
+✅ It allows the user to run: sudo <any-command>
+
+❗ Important Conclusion
+Scenario				Permission Level
+Added to wheel		🚨 Full root access via sudo
+Not added to wheel	✅ Normal limited user
+
+
+Now i want to know what are all the commands executed by the kastro-devops user
+In the main terminal, switch to root user
+sudo cat /home/kastro-devops/.bash_history
+You will see " No such file or directory". This because we will see history only when "kastro-devops" user closes the terminal
+Close the "kastro-devops" tab in Moba and execute the above command one more time, you will see the list of commands executed by the "kastro-devops" user.
+
+Check Login History
+last devops-user
+👉 Shows:
+Login time
+IP address
+Session duration
+
+
+=========
+Lab 2
+=========
+without adding user to wheel group, give me the complete lab with limited permissions like file creation, directory creation, package installation. i want the custom user to login using "devops-user" username in mobaxterm. 
+
+You want a user:
+Username: devops-user
+Can login via MobaXterm
+Can:
+✅ Create files
+✅ Create directories
+✅ Install packages (controlled way)
+❌ No full sudo/root access
+
+⚠️ Important Reality
+👉 Package installation requires root privileges
+So we cannot allow full sudo, but we can allow:
+✅ Only specific commands via sudo (controlled access)
+
+🧪 COMPLETE LAB SETUP
+🔹 Step 1: Connect as ec2-user
+🔹 Step 2: Create User
+sudo adduser devops-user
+🔹 Step 3: Setup SSH Access
+sudo mkdir -p /home/devops-user/.ssh
+sudo cp /home/ec2-user/.ssh/authorized_keys /home/devops-user/.ssh/
+
+Set permissions:
+sudo chown -R devops-user:devops-user /home/devops-user/.ssh
+sudo chmod 700 /home/devops-user/.ssh
+sudo chmod 600 /home/devops-user/.ssh/authorized_keys
+🔹 Step 4: DO NOT Add to wheel ❌
+👉 This is key:
+# DO NOT RUN THIS
+# sudo usermod -aG wheel devops-user
+🔹 Step 5: Create Working Directory
+sudo mkdir /workspace
+sudo chown devops-user:devops-user /workspace
+🔹 Step 6: Allow Limited Package Installation (Controlled Sudo)
+Edit sudoers safely:
+sudo visudo
+Add this line at the bottom:
+devops-user ALL=(ALL) NOPASSWD: /usr/bin/dnf install *, /usr/bin/dnf remove *
+👉 This means:
+User can run:
+sudo dnf install nginx
+But cannot:
+Edit system configs
+Run arbitrary sudo commands
+🔹 Step 7: (Optional) Restrict Further
+If you want tighter control:
+devops-user ALL=(ALL) NOPASSWD: /usr/bin/dnf install nginx
+👉 Only nginx installation allowed
+🔹 Step 8: Login via MobaXterm
+Use:
+Username: devops-user
+Key: .pem
+Host: public IP
+ssh -i your-key.pem devops-user@your-public-ip
+🔹 Step 9: Test Permissions
+✅ Allowed
+touch file.txt
+mkdir mydir
+cd /workspace
+sudo dnf install nginx
+❌ Not Allowed
+sudo su
+sudo vi /etc/passwd
+sudo systemctl stop sshd
+👉 These will fail 🚫
+
+=========
+Lab 1
+=========
+Q) i have launched amazon linux 2023 ami, we will usually connect with vm as "ec2-user" default user. lets say i want to connect with custom user name such as "kastro-devops" using mobaxterm terminal with public ip of vm. can we connect? if so how? tell me complete step by step process
+
+Ans) Yes, we can achieve this.
+But you cannot directly SSH as a new user unless that user already exists on the VM.
+So the process is:
+	Connect using default ec2-user
+	Create your custom user
+	Configure SSH access for that user
+	Then connect via MobaXterm using the new username
+
+🚀 Complete Step-by-Step Process
+🔹 Step 1: Connect to VM using default user (ec2-user)
+
+🔹 Step 2: Create New User (kastro-devops)
+sudo adduser kastro-devops
+Verify:
+id kastro-devops
+
+🔹 Step 3: Set Password (Optional)
+Not required for key-based login, but useful:
+sudo passwd kastro-devops
+
+🔹 Step 4: Give Sudo Access (Important for DevOps)
+sudo usermod -aG wheel kastro-devops
+In Amazon Linux, wheel group = sudo access
+
+🔹 Step 5: Setup SSH Key Access (MOST IMPORTANT STEP)
+Your new user cannot login yet because no SSH key is configured.
+Copy SSH Key from ec2-user
+sudo mkdir -p /home/kastro-devops/.ssh
+sudo cp /home/ec2-user/.ssh/authorized_keys /home/kastro-devops/.ssh/
+Set Correct Permissions
+sudo chown -R kastro-devops:kastro-devops /home/kastro-devops/.ssh
+sudo chmod 700 /home/kastro-devops/.ssh
+sudo chmod 600 /home/kastro-devops/.ssh/authorized_keys
+🔹 Step 6: (Optional but Recommended) Disable Password Login
+Edit SSH config:
+sudo nano /etc/ssh/sshd_config
+Ensure:
+PasswordAuthentication no
+Restart SSH:
+sudo systemctl restart sshd
+🔹 Step 7: Connect Using Custom User i.e kastro-devops in MobaXTerm duplicate terminal
+Execute 4 to 5 commands.
+While installing packages, use "sudo" in the beginning. It will prompt user password and then check installations.
+
+Does adding an user to wheel group = root access?
+YES (indirectly)
+When you run:
+sudo usermod -aG wheel username
+It does NOT make the user root, but:
+✅ It allows the user to run: sudo <any-command>
+
+❗ Important Conclusion
+Scenario				Permission Level
+Added to wheel		🚨 Full root access via sudo
+Not added to wheel	✅ Normal limited user
+
+
+Now i want to know what are all the commands executed by the kastro-devops user
+In the main terminal, switch to root user
+sudo cat /home/kastro-devops/.bash_history
+You will see " No such file or directory". This because we will see history only when "kastro-devops" user closes the terminal
+Close the "kastro-devops" tab in Moba and execute the above command one more time, you will see the list of commands executed by the "kastro-devops" user.
+
+Check Login History
+last devops-user
+👉 Shows:
+Login time
+IP address
+Session duration
+
+
+=========
+Lab 2
+=========
+without adding user to wheel group, give me the complete lab with limited permissions like file creation, directory creation, package installation. i want the custom user to login using "devops-user" username in mobaxterm. 
+
+You want a user:
+Username: devops-user
+Can login via MobaXterm
+Can:
+✅ Create files
+✅ Create directories
+✅ Install packages (controlled way)
+❌ No full sudo/root access
+
+⚠️ Important Reality
+👉 Package installation requires root privileges
+So we cannot allow full sudo, but we can allow:
+✅ Only specific commands via sudo (controlled access)
+
+🧪 COMPLETE LAB SETUP
+🔹 Step 1: Connect as ec2-user
+🔹 Step 2: Create User
+sudo adduser devops-user
+🔹 Step 3: Setup SSH Access
+sudo mkdir -p /home/devops-user/.ssh
+sudo cp /home/ec2-user/.ssh/authorized_keys /home/devops-user/.ssh/
+
+Set permissions:
+sudo chown -R devops-user:devops-user /home/devops-user/.ssh
+sudo chmod 700 /home/devops-user/.ssh
+sudo chmod 600 /home/devops-user/.ssh/authorized_keys
+🔹 Step 4: DO NOT Add to wheel ❌
+👉 This is key:
+# DO NOT RUN THIS
+# sudo usermod -aG wheel devops-user
+🔹 Step 5: Create Working Directory
+sudo mkdir /workspace
+sudo chown devops-user:devops-user /workspace
+🔹 Step 6: Allow Limited Package Installation (Controlled Sudo)
+Edit sudoers safely:
+sudo visudo
+Add this line at the bottom:
+devops-user ALL=(ALL) NOPASSWD: /usr/bin/dnf install *, /usr/bin/dnf remove *
+👉 This means:
+User can run:
+sudo dnf install nginx
+But cannot:
+Edit system configs
+Run arbitrary sudo commands
+🔹 Step 7: (Optional) Restrict Further
+If you want tighter control:
+devops-user ALL=(ALL) NOPASSWD: /usr/bin/dnf install nginx
+👉 Only nginx installation allowed
+🔹 Step 8: Login via MobaXterm
+Use:
+Username: devops-user
+Key: .pem
+Host: public IP
+ssh -i your-key.pem devops-user@your-public-ip
+🔹 Step 9: Test Permissions
+✅ Allowed
+touch file.txt
+mkdir mydir
+cd /workspace
+sudo dnf install nginx
+❌ Not Allowed
+sudo su
+sudo vi /etc/passwd
+sudo systemctl stop sshd
+👉 These will fail 🚫
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Show current time in IST
+TZ="Asia/Kolkata" date
